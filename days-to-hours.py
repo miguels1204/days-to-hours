@@ -24,6 +24,6 @@ while user_input != "exit":
     user_input = input ("Hello user, please... Insert a number of days and I will convert it to hours!\nAfter you finished your calculation enter 'exit' to finish the program: ")
     list_of_days = user_input.split(", ")
 
-    for num_of_days_element in set(list_of_days): #Most of the time, if you are using lists you want to use them in a for loop
+    for num_of_days_element in set(list_of_days):
         validate_and_execute()
 
