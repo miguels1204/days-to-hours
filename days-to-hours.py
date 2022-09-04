@@ -2,15 +2,15 @@ unit_conversion = 24
 unit = "hours"
 
 def days_to_units(num_of_days):
-    return (f"{num_of_days} days are {num_of_days * unit_conversion} {unit}")
-    
+    return (num_of_days * unit_conversion)
+
 
 def validate_and_execute():
     try:
         user_input_int = int(num_of_days_element)
         if user_input_int > 0:
                 calculated_result = days_to_units(user_input_int)
-                print (calculated_result)
+                print (f"{user_input_int} days are {calculated_result} {unit}")
         elif user_input_int == 0:
             print("Please, enter a valid positive number!")
         else:
